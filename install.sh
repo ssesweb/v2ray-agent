@@ -8792,6 +8792,12 @@ rule-providers:
     url: https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.yaml
     path: ./ruleset/claudeai.yaml
     interval: 86400
+  Gemini:
+    type: http
+    behavior: classical
+    url: https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.yaml
+    path: ./ruleset/gemini.yaml
+    interval: 86400
   Bing:
     type: http
     behavior: classical
@@ -8839,6 +8845,7 @@ rules:
   - RULE-SET,Bing,Bing
   - RULE-SET,OpenAI,OpenAI
   - RULE-SET,ClaudeAI,ClaudeAI
+  - RULE-SET,Gemini,Gemini 
   - RULE-SET,Disney,Disney
   - RULE-SET,proxy,全球代理
   - RULE-SET,gfw,全球代理
